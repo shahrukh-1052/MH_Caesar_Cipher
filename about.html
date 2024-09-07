@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link rel="icon" href="D:\project-02\images\favicon.ico" type="image/x-icon">
+
+    <style>
+        /* General styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Fixed Navigation Bar (copied styles) */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #333;
+            z-index: 1000;
+        }
+
+        .header a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background-color: #28a745;
+            transition: background-color 0.3s ease;
+        }
+
+        .header a:hover {
+            background-color: #218838;
+        }
+
+        /* Main Content */
+        .content-box {
+            background-color: #fff;
+            padding: 40px;
+            margin: 120px auto; /* Adjust margin to compensate for fixed navbar */
+            max-width: 800px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            animation: slide-in 1s ease-out;
+        }
+
+        @keyframes slide-in {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .content-box h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content-box p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        /* Subheading */
+        .subheading {
+            font-size: 1.5rem;
+            color: #333;
+            margin-top: 20px;
+        }
+
+        /* Fixed Footer (copied styles) */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        footer a {
+            color: #00ff00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header (Navigation Bar) -->
+    <div class="header">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="mailto:tufgamerz56@gmail.com">Contact</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content-box">
+        <h1>Caesar Cipher</h1>
+        <p>
+            The Caesar cipher, also known as the shift cipher, is one of the simplest and most well-known encryption techniques. Named after Julius Caesar, who reportedly used it to protect his military communications, the cipher works by shifting the letters of the alphabet by a fixed number. For example, with a shift of 3, A becomes D, B becomes E, and so on. Once you reach the end of the alphabet, it wraps around—X becomes A, Y becomes B, and Z becomes C.
+        </p>
+
+        <p>
+            This cipher is a type of substitution cipher, where each letter in the plaintext is replaced by a letter corresponding to a certain number of positions shifted down the alphabet. While it was effective in Caesar’s time, it is easily broken with modern methods. Nevertheless, it remains a good introduction to cryptography.
+        </p>
+
+        <h2>Mathematical Representation</h2>
+        <p>
+            The Caesar cipher can be represented mathematically as:
+            <br>
+            <strong>C = (P + k) mod 26</strong>
+            <br>
+            Where:
+            <ul style="text-align: left; display: inline-block;">
+                <li>C is the ciphertext letter</li>
+                <li>P is the plaintext letter</li>
+                <li>k is the number of positions to shift (the key)</li>
+            </ul>
+        </p>
+
+        <p>
+            The modulo 26 is used because there are 26 letters in the English alphabet, so after Z, it wraps around back to A. To decrypt a message, you simply reverse the process by shifting the letters back by the same number of positions.
+        </p>
+
+        <h2>Breaking the Caesar Cipher</h2>
+        <p>
+            While the Caesar cipher was useful in its time, it can easily be broken using frequency analysis or simply trying all possible shifts (only 25 possibilities). For this reason, more complex encryption methods have been developed over time, though the Caesar cipher still remains an important part of cryptography history.
+        </p>
+
+        <div class="subheading">
+            Designed and developed by HABEEBUDDIN
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2024 Made with ♥ by <a href="https://github.com/shahrukh-1052">HABEEBUDDIN</a>
+        </p>
+    </footer>
+
+</body>
+</html>
