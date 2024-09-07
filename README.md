@@ -1,3 +1,7 @@
+![image](https://github.com/user-attachments/assets/c4bfdfeb-5efa-432d-a92d-f21ef8b3cca9)
+
+
+
 **Caesar Cipher**
 
  **Overview**
@@ -10,6 +14,9 @@ The Caesar Cipher is one of the simplest and most well-known encryption techniqu
 - **Decryption**: Converts ciphertext back to plaintext using the same shift value.
 - **Customizable Shift**: Users can specify the number of positions to shift.
 - **Command-Line Interface**: Interact with the program via the terminal.
+
+  ![image](https://github.com/user-attachments/assets/d7663710-7ac8-4671-92a1-215700c0624c)
+
 
  **How It Works**
 
@@ -48,7 +55,7 @@ The same shift value is used to decrypt the message.
 
  **Usage**
 
-** Encrypting a Message**
+**Encrypting a Message**
 
 1. Run the program.
 2. Choose the encryption option.
@@ -98,3 +105,6 @@ For questions or feedback, please contact:
 
 - **Email** : tufgamerz56@gmail.com
 - **GitHub**: [shahrukh-1052](https://github.com/shahrukh-1052)
+
+  ![image](https://github.com/user-attachments/assets/99fa1620-8d0f-45f7-88f1-8193047d0980)
+
